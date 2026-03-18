@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TVK Card Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>TVK Virtual Warrior Registration</h2>
+
+<form id="form">
+<input type="text" id="name" placeholder="பெயர்" required>
+<input type="number" id="year" placeholder="பிறந்த ஆண்டு" required>
+<input type="text" id="constituency" placeholder="சட்டமன்றம்" required>
+<input type="text" id="district" placeholder="மாவட்டம்" required>
+<input type="text" id="state" placeholder="மாநிலம்" required>
+<input type="text" id="position" placeholder="பதவி" required>
+<input type="file" id="photo" required>
+<button type="submit">Generate Card</button>
+</form>
+
+<div class="card" id="card">
+
+<img src="images/card-template.jpg" class="card-bg">
+
+<!-- USER PHOTO -->
+<img id="userPhoto" class="photo">
+
+<!-- DETAILS -->
+<div class="details">
+
+<div class="row">
+<span class="label">பெயர்</span>
+<span class="colon">:</span>
+<span id="nameText"></span>
+</div>
+
+<div class="row">
+<span class="label">பிறந்த ஆண்டு</span>
+<span class="colon">:</span>
+<span id="yearText"></span>
+</div>
+
+<div class="row">
+<span class="label">சட்டமன்றம்</span>
+<span class="colon">:</span>
+<span id="constText"></span>
+</div>
+
+<div class="row">
+<span class="label">மாவட்டம்</span>
+<span class="colon">:</span>
+<span id="districtText"></span>
+</div>
+
+<div class="row">
+<span class="label">மாநிலம்</span>
+<span class="colon">:</span>
+<span id="stateText"></span>
+</div>
+
+<div class="row">
+<span class="label">பதவி</span>
+<span class="colon">:</span>
+<span id="positionText"></span>
+</div>
+
+</div>
+
+</div>
+
+<br>
+<button onclick="downloadCard()">Download Card</button>
+
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

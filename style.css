@@ -1,0 +1,92 @@
+body{
+font-family:Arial;
+text-align:center;
+background:#f2f2f2;
+margin:0;
+}
+
+/* FORM */
+form{
+background:white;
+padding:15px;
+width:300px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+input{
+width:100%;
+margin:5px;
+padding:8px;
+}
+
+button{
+background:red;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* CARD SIZE FIX */
+.card{
+position:relative;
+width:600px;   /* 🔥 reduced size */
+margin:20px auto;
+}
+
+/* BACKGROUND IMAGE */
+.card-bg{
+width:100%;
+display:block;
+}
+
+/* USER PHOTO (ABOVE QR - LEFT SIDE) */
+.photo{
+position:absolute;
+top:48%;
+left:8%;
+width:100px;
+height:120px;
+object-fit:cover;
+border:3px solid white;
+}
+
+/* DETAILS CENTER */
+.details{
+position:absolute;
+top:32%;
+left:35%;
+width:50%;
+}
+
+/* ROW ALIGNMENT */
+.row{
+display:flex;
+align-items:center;
+margin:5px 0;
+font-size:16px;
+font-weight:bold;
+}
+
+/* LABEL */
+.label{
+width:140px;
+color:#b30000;
+text-align:left;
+}
+
+/* COLON */
+.colon{
+width:15px;
+text-align:center;
+}
+
+/* VALUE */
+.row span:last-child{
+flex:1;
+text-align:left;
+color:black;
+}
